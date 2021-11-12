@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="container-0">
+            <header id="container-1">
+                <h1 id="title">Cat Inquiry</h1>
+                <p id="description">What's your opinion on cats?</p>
+            </header>
+            <div id="container-2">
+                <form id="survey-form">
+                    <div class ="form-group">
+                        <label for="name" id="name-label">Name:</label><br>
+                        <input type="text" name="name" id="name" required placeholder="Frog Man">
+                    </div>
+                    <div class ="form-group">
+                        <label for="email" id="email-label">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="sushilover32@gmail.com">
+                    </div>
+                    <div class ="form-group">
+                        <label for="dropdown">Have you ever owned a cat?</label>
+                        <br>
+                        <select name="dropdown" id="dropdown">
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class ="form-group">
+                        <label for="number" id="number-label">Number of cats owned:</label>
+                        <br>
+                        <input type="number" name="number" id="number" min="0" max="100000" placeholder="0">
+                    </div>
+                    <div class ="form-group">
+                        <label for="favCat">Favorite Cat:</label>
+                        <input type="text" name="favCat" id="favCat">
+                    </div>
+                    <div class ="form-group">
+                        <label for="notCat">Least Favorite Cat:</label>
+                        <input type="text" name="notCat" id="notCat">
+                    </div>
+                    <div>
+                        <p>What is your general opinion of cats?</p>
+                        <input type="radio" id="love" name="love">
+                        <label for="love">I love them!</label>
+                        <br>
+                        <input type="radio" id="okay" name="okay">
+                        <label for="okay">Cats are okay</label>
+                        <br>
+                        <input type="radio" id="never-had" name="never-had">
+                        <label for="never-had">I've never had one</label>
+                    </div>
+                    <div>
+                        <p>Which of the following cats do you find desirable?</p>
+                        <input type="checkbox" name="persian" id="persian"  value="persian">
+                        <label for="persian">Persian</label>
+                        <br>
+                        <input type="checkbox" name="british" id="british">
+                        <label for="british">British Shorthair</label>
+                        <br>
+                        <input type="checkbox" name="siamese" id="siamese">
+                        <label for="siamese">Siamese</label>
+                        <br>
+                        <input type="checkbox" name="hairless" id="hairless" checked>
+                        <label for="hairless">Hairless</label>
+                    </div>
+                    <div class ="form-group">
+                        <p>Please write about your most recent cat experience:</p>
+                        <textarea name="catText" id="catText" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class ="form-group">
+                        <label for="submit"></label>
+                        <input type="button" id="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div id = "space"></div>
+        </div>
+    </body>
+</html>
